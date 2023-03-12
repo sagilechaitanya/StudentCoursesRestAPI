@@ -18,7 +18,6 @@ pipeline {
     }
     stage('scan'){
       steps{
-        sh 'echo docker scan chaitanyasagile/spc:latest',
         sh 'docker image push chaitanyasagile/spc:latest'
       }  
     }
