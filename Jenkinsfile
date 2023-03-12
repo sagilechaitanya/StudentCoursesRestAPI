@@ -12,7 +12,6 @@ pipeline {
     }
     stage('build') {
       steps{
-        sh 'cd StudentCoursesRestAPI'
         sh 'docker image build -t chaitanyasagile/spc:latest .'
       }  
     }
